@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Basic light theme styles - default */
+body {
+  background-color: #ffffff;
+  color: #333333;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark theme styles - applied when .dark class is on html */
+html.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+/* General dark mode adjustments for text and background on various elements */
+html.dark body {
+  background-color: #1a202c; /* Ensure body background is also dark */
+  color: #e2e8f0;
+}
+
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+    color: #ffffff; /* White headings in dark mode */
+}
+
+html.dark p {
+    color: #cbd5e0; /* Lighter text for paragraphs */
+}
+
+/* Adjust specific component styles for dark theme */
+.dark .border {
+  border-color: #4a5568; /* Darker border color */
+}
+
+.dark .bg-white {
+    background-color: #2d3748; /* Darker background for elements with bg-white */
+}
+
+.dark .text-gray-700 {
+    color: #cbd5e0; /* Adjust specific text colors */
+}
+
+.dark input, .dark select, .dark textarea {
+    background-color: #2d3748; /* Dark background for form inputs */
+    color: #e2e8f0; /* Light text for form inputs */
+    border-color: #4a5568; /* Dark border for form inputs */
+}
+
+.dark button {
+    /* Adjust button styles as needed for dark mode */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

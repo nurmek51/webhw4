@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "webhw4",
+			"path": "."
+		},
+		{
+			"name": "public",
+			"path": "../../Downloads/web-lecture-4-homework-main/public"
+		},
+		{
+			"name": "src",
+			"path": "../../Downloads/web-lecture-4-homework-main/src"
+		}
+	],
+	"settings": {}
+}
